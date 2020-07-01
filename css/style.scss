@@ -1,0 +1,144 @@
+$primary :#C9C8CD;
+$secondary :#EAA81F;
+$paragraph: #646f79;
+
+
+
+body {
+    font-family: 'Montserrat';
+}
+
+p {
+    color: $paragraph;
+    line-height: 2;
+}
+
+footer {
+    padding: 10px 0px;
+    margin-top: 100px;
+    background-color: $secondary;
+    text-align: center;
+    content: "";
+    clear: both;
+
+    color: white;
+    position: relative;
+}
+
+
+
+.brand-logo {
+    font-weight: bold;
+}
+
+.img-mardial {
+
+    height: 400px;
+    margin-right: 50px;
+    object-fit: cover;
+
+    @media only screen and (max-width: 991px) {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 1370px) {
+    .biography-img {
+        float: left;
+        width: 30%;
+
+    }
+
+    .biography-paragraph {
+        float: none;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 1190px) and (max-width: 1369px) {
+    .biography-img {
+        float: left;
+        width: 35%;
+
+    }
+
+    .biography-paragraph {
+        float: none;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1189px) {
+    .biography-img {
+        float: left;
+        width: 40%;
+
+    }
+
+    .biography-paragraph {
+        float: none;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .bio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 400px;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .border-bottom {
+        border-bottom: 3px solid $secondary;
+
+    }
+
+    nav {
+        ul {
+            a {
+                font-weight: 500;
+                border-bottom: 3px solid transparent;
+                margin-top: -3px;
+                transition: ease-in-out;
+
+                -webkit-transition: ease-in-out;
+                -moz-transition: ease-in-out;
+                -ms-transition: ease-in-out;
+                -o-transition: ease-in-out;
+                transition-duration: .3s;
+
+                &:hover {
+                    color: $secondary !important;
+                    background-color: rgba(0, 0, 0, 0) !important;
+                    @extend .border-bottom;
+
+                }
+            }
+        }
+    }
+}
